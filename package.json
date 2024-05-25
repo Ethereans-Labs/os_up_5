@@ -1,0 +1,25 @@
+{
+    "name": "os_up_5",
+    "version": "1.0.0",
+    "description": "Ethereans OS DAO Update Proposal #5 (OS_UP_5)",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "multiverse-test": "mocha"
+    },
+    "keywords": [],
+    "author": "Ethereans Labs A.G.",
+    "license": "ISC",
+    "dependencies": {
+        "@ethereansos/multiverse": "git+https://github.com/EthereansOS/multiverse.git",
+        "@ethereansos/ethcomputationalorgs": "git+https://github.com/EthereansOS/ETHComputationalOrgs.git#v1.0.3"
+    },
+    "multiverse": {
+        "knowledgeBase": "resources/knowledgeBase",
+        "solidityVersion": "0.8.6"
+    },
+    "mocha": {
+        "timeout": false,
+        "require": "@ethereansos/multiverse"
+    }
+}
